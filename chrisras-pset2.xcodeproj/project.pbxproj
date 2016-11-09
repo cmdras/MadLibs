@@ -12,6 +12,7 @@
 		8328BE2C1DD2A61000C460D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8328BE2A1DD2A61000C460D6 /* Main.storyboard */; };
 		8328BE2E1DD2A61000C460D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8328BE2D1DD2A61000C460D6 /* Assets.xcassets */; };
 		8328BE311DD2A61000C460D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8328BE2F1DD2A61000C460D6 /* LaunchScreen.storyboard */; };
+		8380E41A1DD2E05700076E3B /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380E4191DD2E05700076E3B /* secondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8328BE2D1DD2A61000C460D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8328BE301DD2A61000C460D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8328BE321DD2A61000C460D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8380E4191DD2E05700076E3B /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				8328BE2D1DD2A61000C460D6 /* Assets.xcassets */,
 				8328BE2F1DD2A61000C460D6 /* LaunchScreen.storyboard */,
 				8328BE321DD2A61000C460D6 /* Info.plist */,
+				8380E4191DD2E05700076E3B /* secondViewController.swift */,
 			);
 			path = "chrisras-pset2";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8328BE291DD2A61000C460D6 /* ViewController.swift in Sources */,
+				8380E41A1DD2E05700076E3B /* secondViewController.swift in Sources */,
 				8328BE271DD2A61000C460D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +303,7 @@
 				8328BE371DD2A61000C460D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
