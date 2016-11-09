@@ -13,6 +13,8 @@
 		8328BE2E1DD2A61000C460D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8328BE2D1DD2A61000C460D6 /* Assets.xcassets */; };
 		8328BE311DD2A61000C460D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8328BE2F1DD2A61000C460D6 /* LaunchScreen.storyboard */; };
 		8380E41A1DD2E05700076E3B /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380E4191DD2E05700076E3B /* secondViewController.swift */; };
+		8380E41D1DD3C2B800076E3B /* madlib0_simple.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8380E41B1DD3C2B800076E3B /* madlib0_simple.txt */; };
+		8380E41E1DD3C2B800076E3B /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380E41C1DD3C2B800076E3B /* Story.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8328BE301DD2A61000C460D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8328BE321DD2A61000C460D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8380E4191DD2E05700076E3B /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		8380E41B1DD3C2B800076E3B /* madlib0_simple.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = madlib0_simple.txt; path = ../../../../Downloads/madlibs_ios/madlib0_simple.txt; sourceTree = "<group>"; };
+		8380E41C1DD3C2B800076E3B /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = ../../../../Downloads/madlibs_ios/Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		8328BE251DD2A61000C460D6 /* chrisras-pset2 */ = {
 			isa = PBXGroup;
 			children = (
+				8380E41B1DD3C2B800076E3B /* madlib0_simple.txt */,
+				8380E41C1DD3C2B800076E3B /* Story.swift */,
 				8328BE261DD2A61000C460D6 /* AppDelegate.swift */,
 				8328BE281DD2A61000C460D6 /* ViewController.swift */,
 				8328BE2A1DD2A61000C460D6 /* Main.storyboard */,
@@ -128,6 +134,7 @@
 			files = (
 				8328BE311DD2A61000C460D6 /* LaunchScreen.storyboard in Resources */,
 				8328BE2E1DD2A61000C460D6 /* Assets.xcassets in Resources */,
+				8380E41D1DD3C2B800076E3B /* madlib0_simple.txt in Resources */,
 				8328BE2C1DD2A61000C460D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +149,7 @@
 				8328BE291DD2A61000C460D6 /* ViewController.swift in Sources */,
 				8380E41A1DD2E05700076E3B /* secondViewController.swift in Sources */,
 				8328BE271DD2A61000C460D6 /* AppDelegate.swift in Sources */,
+				8380E41E1DD3C2B800076E3B /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

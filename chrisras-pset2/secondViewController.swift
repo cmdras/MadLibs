@@ -11,10 +11,29 @@ import UIKit
 class secondViewController: UIViewController {
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
-
+    
+    var textName = "madlib0_simple"
+    
+    /// A function that reads a .txt file in a String
+    func readFile() -> String{
+        var buffer = ""
+        if let path = Bundle.main.path(forResource: textName, ofType: "txt"){
+            do {
+                buffer = try String(contentsOfFile: path)
+            } catch {
+                print("Error in reading file")
+            }
+        } else {
+            print("File not found")
+        }
+        return buffer
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let plot = readFile()
+        
         // Do any additional setup after loading the view.
     }
 
