@@ -11,12 +11,16 @@ import UIKit
 class secondViewController: UIViewController {
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var inputField: UITextField!
+    var inputString: String?
+    var remaining: Int?
+    var nextType: String?
+    var story = Story(stream: "")
     
-    var textName = "madlib0_simple"
     
     /// A function that reads a .txt file in a String
-    func readFile() -> String{
-        var buffer = ""
+    func readFile(textName: String) -> String{
+        var buffer: String?
         if let path = Bundle.main.path(forResource: textName, ofType: "txt"){
             do {
                 buffer = try String(contentsOfFile: path)
@@ -26,14 +30,23 @@ class secondViewController: UIViewController {
         } else {
             print("File not found")
         }
-        return buffer
+        return buffer!
+    }
+    
+    /// Updates the labels based on the story
+    func updateLabels(story: Story){
+        remaining = story.getPlaceholderRemainingCount()
+        nextType = story.getNextPlaceholder()
+        firstLabel.text = "\(String(remaining!)) word(s) left"
+        secondLabel.text = "Please type a/an \(nextType!)"
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let plot = readFile()
-        
+        let file = readFile(textName: "madlib0_simple")
+        let story = Story(stream: file)
+        updateLabels(story: story)
         // Do any additional setup after loading the view.
     }
 
@@ -41,8 +54,15 @@ class secondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+        if inputField.text != nil {
+            story.fillInPlaceholder(word: inputField.text!)
+            updateLabels(story: story)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

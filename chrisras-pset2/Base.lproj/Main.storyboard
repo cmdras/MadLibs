@@ -29,7 +29,7 @@
                                         <rect key="frame" x="46.5" y="0.0" width="282" height="308"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F8U-hd-hzB">
-                                        <rect key="frame" x="187.5" y="308" width="0.0" height="200"/>
+                                        <rect key="frame" x="9" y="308" width="357" height="200"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="E0b-z1-7ft" userLabel="height = 150"/>
@@ -101,6 +101,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atw-Db-rt7">
                                         <rect key="frame" x="97" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="OK"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="Q57-AI-mUZ" eventType="touchUpInside" id="DP2-dJ-GTE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -126,6 +129,7 @@
                     </view>
                     <connections>
                         <outlet property="firstLabel" destination="nX9-6r-B5l" id="azc-zv-f3l"/>
+                        <outlet property="inputField" destination="vB6-8M-lu6" id="dZ4-Ob-Tdt"/>
                         <outlet property="secondLabel" destination="Iee-13-Y9p" id="o3d-fT-uex"/>
                     </connections>
                 </viewController>
