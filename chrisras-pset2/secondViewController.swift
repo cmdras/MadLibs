@@ -45,7 +45,7 @@ class secondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let file = readFile(textName: "madlib0_simple")
-        let story = Story(stream: file)
+        story = Story(stream: file)
         updateLabels(story: story)
         // Do any additional setup after loading the view.
     }
@@ -55,11 +55,23 @@ class secondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
+    // code to perform manual segue found on https://www.youtube.com/watch?v=os2fdHCCh3o
     @IBAction func buttonPressed(_ sender: Any) {
         if inputField.text != nil {
             story.fillInPlaceholder(word: inputField.text!)
             updateLabels(story: story)
+            inputField.text = ""
+            
+            if story.isFilledIn() {
+                self.performSegue(withIdentifier: "s2to3", sender: nil)
+            }
+            
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let thirdVC = segue.destination as? ThirdViewController {
+            thirdVC.finishedStory = story
         }
     }
     
