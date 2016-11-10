@@ -17,6 +17,9 @@
 		8380E41E1DD3C2B800076E3B /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380E41C1DD3C2B800076E3B /* Story.swift */; };
 		83B837851DD3F88F001D8272 /* madlib1_tarzan.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83B837841DD3F88F001D8272 /* madlib1_tarzan.txt */; };
 		83B837871DD3FBDF001D8272 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B837861DD3FBDF001D8272 /* ThirdViewController.swift */; };
+		83B8378B1DD406F5001D8272 /* madlib2_university.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83B837881DD406F5001D8272 /* madlib2_university.txt */; };
+		83B8378C1DD406F5001D8272 /* madlib3_clothes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83B837891DD406F5001D8272 /* madlib3_clothes.txt */; };
+		83B8378D1DD406F5001D8272 /* madlib4_dance.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83B8378A1DD406F5001D8272 /* madlib4_dance.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		8380E41C1DD3C2B800076E3B /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = ../../../../Downloads/madlibs_ios/Story.swift; sourceTree = "<group>"; };
 		83B837841DD3F88F001D8272 /* madlib1_tarzan.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = madlib1_tarzan.txt; path = ../../../../Downloads/madlibs_ios/madlib1_tarzan.txt; sourceTree = "<group>"; };
 		83B837861DD3FBDF001D8272 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		83B837881DD406F5001D8272 /* madlib2_university.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = madlib2_university.txt; path = ../../../../Downloads/madlibs_ios/madlib2_university.txt; sourceTree = "<group>"; };
+		83B837891DD406F5001D8272 /* madlib3_clothes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = madlib3_clothes.txt; path = ../../../../Downloads/madlibs_ios/madlib3_clothes.txt; sourceTree = "<group>"; };
+		83B8378A1DD406F5001D8272 /* madlib4_dance.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = madlib4_dance.txt; path = ../../../../Downloads/madlibs_ios/madlib4_dance.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,9 @@
 				8328BE2F1DD2A61000C460D6 /* LaunchScreen.storyboard */,
 				8328BE321DD2A61000C460D6 /* Info.plist */,
 				8380E4191DD2E05700076E3B /* secondViewController.swift */,
+				83B837881DD406F5001D8272 /* madlib2_university.txt */,
+				83B837891DD406F5001D8272 /* madlib3_clothes.txt */,
+				83B8378A1DD406F5001D8272 /* madlib4_dance.txt */,
 				83B837861DD3FBDF001D8272 /* ThirdViewController.swift */,
 			);
 			path = "chrisras-pset2";
@@ -139,9 +148,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8328BE311DD2A61000C460D6 /* LaunchScreen.storyboard in Resources */,
+				83B8378C1DD406F5001D8272 /* madlib3_clothes.txt in Resources */,
 				83B837851DD3F88F001D8272 /* madlib1_tarzan.txt in Resources */,
 				8328BE2E1DD2A61000C460D6 /* Assets.xcassets in Resources */,
 				8380E41D1DD3C2B800076E3B /* madlib0_simple.txt in Resources */,
+				83B8378B1DD406F5001D8272 /* madlib2_university.txt in Resources */,
+				83B8378D1DD406F5001D8272 /* madlib4_dance.txt in Resources */,
 				8328BE2C1DD2A61000C460D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

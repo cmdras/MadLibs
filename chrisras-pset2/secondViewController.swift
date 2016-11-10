@@ -15,8 +15,17 @@ class secondViewController: UIViewController {
     var inputString: String?
     var remaining: Int?
     var nextType: String?
+    var storyFilename: String?
     var story = Story(stream: "")
+    var differentTexts = ["madlib0_simple", "madlib1_tarzan", "madlib2_university", "madlib3_clothes", "madlib4_dance"]
     
+    // Code adapted from http://swift3tutorials.com/swift-3-while-statements-2/
+    /// Generates a random text filename from the samples
+    func chooseStory() -> String{
+        let randomNum:UInt32 = arc4random_uniform(UInt32(differentTexts.count))
+        let storyIndex:Int = Int(randomNum)
+        return differentTexts[storyIndex]
+    }
     
     /// A function that reads a .txt file in a String
     func readFile(textName: String) -> String{
@@ -42,9 +51,11 @@ class secondViewController: UIViewController {
     }
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let file = readFile(textName: "madlib0_simple")
+        storyFilename = chooseStory()
+        let file = readFile(textName: storyFilename!)
         story = Story(stream: file)
         updateLabels(story: story)
         // Do any additional setup after loading the view.
