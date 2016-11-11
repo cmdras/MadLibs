@@ -17,7 +17,7 @@ class secondViewController: UIViewController {
     var nextType: String?
     var storyFilename: String?
     var story = Story(stream: "")
-    var differentTexts = ["madlib0_simple", "madlib1_tarzan", "madlib2_university", "madlib3_clothes", "madlib4_dance"]
+    var differentTexts = ["madlibs_ios/madlib0_simple", "madlibs_ios/madlib1_tarzan", "madlibs_ios/madlib2_university", "madlibs_ios/madlib3_clothes", "madlibs_ios/madlib4_dance"]
     
     // Code adapted from http://swift3tutorials.com/swift-3-while-statements-2/
     /// Generates a random text filename from the samples
