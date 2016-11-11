@@ -12,9 +12,9 @@
 		8328BE2C1DD2A61000C460D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8328BE2A1DD2A61000C460D6 /* Main.storyboard */; };
 		8328BE2E1DD2A61000C460D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8328BE2D1DD2A61000C460D6 /* Assets.xcassets */; };
 		8328BE311DD2A61000C460D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8328BE2F1DD2A61000C460D6 /* LaunchScreen.storyboard */; };
-		836FE92D1DD658FC0003B25C /* madlibs_ios in Resources */ = {isa = PBXBuildFile; fileRef = 836FE92C1DD658FC0003B25C /* madlibs_ios */; };
+		836FE9371DD66A330003B25C /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836FE9361DD66A330003B25C /* Story.swift */; };
+		836FE9391DD66A3E0003B25C /* madlibs_ios in Resources */ = {isa = PBXBuildFile; fileRef = 836FE9381DD66A3E0003B25C /* madlibs_ios */; };
 		8380E41A1DD2E05700076E3B /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380E4191DD2E05700076E3B /* secondViewController.swift */; };
-		8380E41E1DD3C2B800076E3B /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380E41C1DD3C2B800076E3B /* Story.swift */; };
 		83B837871DD3FBDF001D8272 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B837861DD3FBDF001D8272 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,9 +26,9 @@
 		8328BE2D1DD2A61000C460D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8328BE301DD2A61000C460D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8328BE321DD2A61000C460D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		836FE92C1DD658FC0003B25C /* madlibs_ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = madlibs_ios; path = ../../../../Downloads/madlibs_ios; sourceTree = "<group>"; };
+		836FE9361DD66A330003B25C /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		836FE9381DD66A3E0003B25C /* madlibs_ios */ = {isa = PBXFileReference; lastKnownFileType = folder; path = madlibs_ios; sourceTree = "<group>"; };
 		8380E4191DD2E05700076E3B /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
-		8380E41C1DD3C2B800076E3B /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = ../../../../Downloads/madlibs_ios/Story.swift; sourceTree = "<group>"; };
 		83B837861DD3FBDF001D8272 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,8 +62,8 @@
 		8328BE251DD2A61000C460D6 /* chrisras-pset2 */ = {
 			isa = PBXGroup;
 			children = (
-				836FE92C1DD658FC0003B25C /* madlibs_ios */,
-				8380E41C1DD3C2B800076E3B /* Story.swift */,
+				836FE9381DD66A3E0003B25C /* madlibs_ios */,
+				836FE9361DD66A330003B25C /* Story.swift */,
 				8328BE261DD2A61000C460D6 /* AppDelegate.swift */,
 				8328BE281DD2A61000C460D6 /* ViewController.swift */,
 				8328BE2A1DD2A61000C460D6 /* Main.storyboard */,
@@ -136,7 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8328BE311DD2A61000C460D6 /* LaunchScreen.storyboard in Resources */,
-				836FE92D1DD658FC0003B25C /* madlibs_ios in Resources */,
+				836FE9391DD66A3E0003B25C /* madlibs_ios in Resources */,
 				8328BE2E1DD2A61000C460D6 /* Assets.xcassets in Resources */,
 				8328BE2C1DD2A61000C460D6 /* Main.storyboard in Resources */,
 			);
@@ -153,7 +153,7 @@
 				8380E41A1DD2E05700076E3B /* secondViewController.swift in Sources */,
 				83B837871DD3FBDF001D8272 /* ThirdViewController.swift in Sources */,
 				8328BE271DD2A61000C460D6 /* AppDelegate.swift in Sources */,
-				8380E41E1DD3C2B800076E3B /* Story.swift in Sources */,
+				836FE9371DD66A330003B25C /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
